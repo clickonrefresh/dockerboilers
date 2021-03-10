@@ -1,7 +1,7 @@
 version: '3'
 services:
   web:
-    container_name: customname
+    container_name: customname:tag
     image: odoo:14.0
     depends_on:
       - dbcustom
