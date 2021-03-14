@@ -11,8 +11,7 @@ services:
       - odoo-web-data:/var/lib/odoo
       - ./config:/etc/odoo
       - ./addons:/mnt/extra-addons
-    command: -c "cd /usr/lib/python3"
-    command: -c "pip3 install pandas"
+    command: -c "cd /usr/lib/python3 && pip3 install pandas"
     environment:
       - HOST=dbcustom
       - USER=odoocustom
